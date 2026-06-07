@@ -1,3 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Solution>
   <Folder Name="/Solution Items/">
     <File Path=".editorconfig" />
@@ -8,6 +9,10 @@
     <File Path="Publish.ps1" />
     <File Path="README.md" />
     <File Path="version.json" />
+    <File Path="CONTRIBUTING.md" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+    <File Path="SECURITY.md" />
   </Folder>
   <Project Path="Uk.Nhs.CyberAlerts.Api.Test/Uk.Nhs.CyberAlerts.Api.Test.csproj" />
   <Project Path="Uk.Nhs.CyberAlerts.Api/Uk.Nhs.CyberAlerts.Api.csproj" />

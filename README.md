@@ -1,3 +1,9 @@
+[![Codacy Badge](https://app.codacy.com/project/badge/grade/Uk.Nhs.Api)](https://app.codacy.com/gh/panoramicdata/Uk.Nhs.Api/dashboard)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+[![Codacy Badge](https://app.codacy.com/project/badge/grade/Uk.Nhs.CyberAlerts.Api)](https://app.codacy.com/gh/panoramicdata/Uk.Nhs.CyberAlerts.Api/dashboard)
+
 # Uk.Nhs.CyberAlerts.Api
 A Nuget package for the UK NHS Cyber Alerts.
 
