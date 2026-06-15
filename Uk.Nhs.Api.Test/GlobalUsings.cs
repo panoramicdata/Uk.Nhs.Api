@@ -1,0 +1,7 @@
+﻿global using AwesomeAssertions;
+global using Microsoft.Extensions.Logging;
+global using System;
+global using System.Globalization;
+global using System.Threading;
+global using System.Threading.Tasks;
+global using Xunit;
