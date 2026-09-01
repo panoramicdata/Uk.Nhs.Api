@@ -8,9 +8,9 @@
     <Description>A nuget package for the UK NHS APIs.</Description>
     <Copyright>Panoramic Data Limited 2025</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/panoramicdata/Uk.Nhs.Api</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/panoramicdata/Uk.Nhs.CyberAlerts.Api</PackageProjectUrl>
     <PackageIcon>Icon.png</PackageIcon>
-    <RepositoryUrl>https://github.com/panoramicdata/Uk.Nhs.Api</RepositoryUrl>
+    <RepositoryUrl>https://github.com/panoramicdata/Uk.Nhs.CyberAlerts.Api</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageId>Uk.Nhs.Api</PackageId>
     <PackageTags>UK NHS APIs</PackageTags>
@@ -21,6 +21,9 @@
     <NoWarn>$(NoWarn);CS1591</NoWarn>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <NeutralResourcesLanguage>en</NeutralResourcesLanguage>
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="Exceptions\**" />
