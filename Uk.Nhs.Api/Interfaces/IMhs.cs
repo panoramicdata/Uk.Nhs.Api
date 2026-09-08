@@ -10,5 +10,10 @@ public interface IMhs
 	/// Placeholder method for mhs
 	/// </summary>
 	[Get("/placeholder")]
-	Task<string?> GetDataAsync(CancellationToken cancellationToken = default);
+	Task<string?> GetDataAsync(CancellationToken cancellationToken);
+
+	/// <summary>
+	/// Placeholder method for mhs
+	/// </summary>
+	Task<string?> GetDataAsync() => GetDataAsync(CancellationToken.None);
 }

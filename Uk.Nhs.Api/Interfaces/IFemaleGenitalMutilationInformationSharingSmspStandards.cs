@@ -10,5 +10,10 @@ public interface IFemaleGenitalMutilationInformationSharingSmspStandards
 	/// Placeholder method for female-genital-mutilation---information-sharing-smsp-standards
 	/// </summary>
 	[Get("/placeholder")]
-	Task<string?> GetDataAsync(CancellationToken cancellationToken = default);
+	Task<string?> GetDataAsync(CancellationToken cancellationToken);
+
+	/// <summary>
+	/// Placeholder method for female-genital-mutilation---information-sharing-smsp-standards
+	/// </summary>
+	Task<string?> GetDataAsync() => GetDataAsync(CancellationToken.None);
 }

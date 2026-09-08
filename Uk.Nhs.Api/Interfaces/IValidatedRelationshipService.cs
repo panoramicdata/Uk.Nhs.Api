@@ -10,5 +10,10 @@ public interface IValidatedRelationshipService
 	/// Placeholder method for validated-relationship-service
 	/// </summary>
 	[Get("/placeholder")]
-	Task<string?> GetDataAsync(CancellationToken cancellationToken = default);
+	Task<string?> GetDataAsync(CancellationToken cancellationToken);
+
+	/// <summary>
+	/// Placeholder method for validated-relationship-service
+	/// </summary>
+	Task<string?> GetDataAsync() => GetDataAsync(CancellationToken.None);
 }

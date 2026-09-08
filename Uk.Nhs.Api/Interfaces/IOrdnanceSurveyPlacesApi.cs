@@ -10,5 +10,10 @@ public interface IOrdnanceSurveyPlacesApi
 	/// Placeholder method for ordnance-survey-places-api
 	/// </summary>
 	[Get("/placeholder")]
-	Task<string?> GetDataAsync(CancellationToken cancellationToken = default);
+	Task<string?> GetDataAsync(CancellationToken cancellationToken);
+
+	/// <summary>
+	/// Placeholder method for ordnance-survey-places-api
+	/// </summary>
+	Task<string?> GetDataAsync() => GetDataAsync(CancellationToken.None);
 }

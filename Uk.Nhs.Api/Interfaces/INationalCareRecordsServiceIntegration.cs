@@ -10,5 +10,10 @@ public interface INationalCareRecordsServiceIntegration
 	/// Placeholder method for national-care-records-service-integration
 	/// </summary>
 	[Get("/placeholder")]
-	Task<string?> GetDataAsync(CancellationToken cancellationToken = default);
+	Task<string?> GetDataAsync(CancellationToken cancellationToken);
+
+	/// <summary>
+	/// Placeholder method for national-care-records-service-integration
+	/// </summary>
+	Task<string?> GetDataAsync() => GetDataAsync(CancellationToken.None);
 }

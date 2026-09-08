@@ -10,5 +10,10 @@ public interface ISpineElectronicPrescriptionServiceTrackerRest
 	/// Placeholder method for spine-electronic-prescription-service-tracker-rest
 	/// </summary>
 	[Get("/placeholder")]
-	Task<string?> GetDataAsync(CancellationToken cancellationToken = default);
+	Task<string?> GetDataAsync(CancellationToken cancellationToken);
+
+	/// <summary>
+	/// Placeholder method for spine-electronic-prescription-service-tracker-rest
+	/// </summary>
+	Task<string?> GetDataAsync() => GetDataAsync(CancellationToken.None);
 }

@@ -10,5 +10,10 @@ public interface ICis1AuthenticationSpineSecurityBroker
 	/// Placeholder method for cis1-authentication-spine-security-broker
 	/// </summary>
 	[Get("/placeholder")]
-	Task<string?> GetDataAsync(CancellationToken cancellationToken = default);
+	Task<string?> GetDataAsync(CancellationToken cancellationToken);
+
+	/// <summary>
+	/// Placeholder method for cis1-authentication-spine-security-broker
+	/// </summary>
+	Task<string?> GetDataAsync() => GetDataAsync(CancellationToken.None);
 }

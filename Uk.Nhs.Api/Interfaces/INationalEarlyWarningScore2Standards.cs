@@ -10,5 +10,10 @@ public interface INationalEarlyWarningScore2Standards
 	/// Placeholder method for national-early-warning-score-2-standards
 	/// </summary>
 	[Get("/placeholder")]
-	Task<string?> GetDataAsync(CancellationToken cancellationToken = default);
+	Task<string?> GetDataAsync(CancellationToken cancellationToken);
+
+	/// <summary>
+	/// Placeholder method for national-early-warning-score-2-standards
+	/// </summary>
+	Task<string?> GetDataAsync() => GetDataAsync(CancellationToken.None);
 }

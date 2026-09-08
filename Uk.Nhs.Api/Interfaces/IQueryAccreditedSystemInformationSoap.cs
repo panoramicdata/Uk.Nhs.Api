@@ -10,5 +10,10 @@ public interface IQueryAccreditedSystemInformationSoap
 	/// Placeholder method for query-accredited-system-information-soap
 	/// </summary>
 	[Get("/placeholder")]
-	Task<string?> GetDataAsync(CancellationToken cancellationToken = default);
+	Task<string?> GetDataAsync(CancellationToken cancellationToken);
+
+	/// <summary>
+	/// Placeholder method for query-accredited-system-information-soap
+	/// </summary>
+	Task<string?> GetDataAsync() => GetDataAsync(CancellationToken.None);
 }

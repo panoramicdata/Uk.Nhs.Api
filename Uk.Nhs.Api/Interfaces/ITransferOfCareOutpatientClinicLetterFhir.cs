@@ -10,5 +10,10 @@ public interface ITransferOfCareOutpatientClinicLetterFhir
 	/// Placeholder method for transfer-of-care-outpatient-clinic-letter-fhir
 	/// </summary>
 	[Get("/placeholder")]
-	Task<string?> GetDataAsync(CancellationToken cancellationToken = default);
+	Task<string?> GetDataAsync(CancellationToken cancellationToken);
+
+	/// <summary>
+	/// Placeholder method for transfer-of-care-outpatient-clinic-letter-fhir
+	/// </summary>
+	Task<string?> GetDataAsync() => GetDataAsync(CancellationToken.None);
 }

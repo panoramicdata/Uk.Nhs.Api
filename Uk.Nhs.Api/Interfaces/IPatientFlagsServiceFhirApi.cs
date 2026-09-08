@@ -10,5 +10,10 @@ public interface IPatientFlagsServiceFhirApi
 	/// Placeholder method for patient-flags-service---fhir-api
 	/// </summary>
 	[Get("/placeholder")]
-	Task<string?> GetDataAsync(CancellationToken cancellationToken = default);
+	Task<string?> GetDataAsync(CancellationToken cancellationToken);
+
+	/// <summary>
+	/// Placeholder method for patient-flags-service---fhir-api
+	/// </summary>
+	Task<string?> GetDataAsync() => GetDataAsync(CancellationToken.None);
 }

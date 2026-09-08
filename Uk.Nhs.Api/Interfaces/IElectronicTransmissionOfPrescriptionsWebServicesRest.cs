@@ -10,5 +10,10 @@ public interface IElectronicTransmissionOfPrescriptionsWebServicesRest
 	/// Placeholder method for electronic-transmission-of-prescriptions-web-services-rest
 	/// </summary>
 	[Get("/placeholder")]
-	Task<string?> GetDataAsync(CancellationToken cancellationToken = default);
+	Task<string?> GetDataAsync(CancellationToken cancellationToken);
+
+	/// <summary>
+	/// Placeholder method for electronic-transmission-of-prescriptions-web-services-rest
+	/// </summary>
+	Task<string?> GetDataAsync() => GetDataAsync(CancellationToken.None);
 }

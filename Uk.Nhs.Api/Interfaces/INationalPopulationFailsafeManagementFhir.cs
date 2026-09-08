@@ -10,5 +10,10 @@ public interface INationalPopulationFailsafeManagementFhir
 	/// Placeholder method for national-population-failsafe-management-fhir
 	/// </summary>
 	[Get("/placeholder")]
-	Task<string?> GetDataAsync(CancellationToken cancellationToken = default);
+	Task<string?> GetDataAsync(CancellationToken cancellationToken);
+
+	/// <summary>
+	/// Placeholder method for national-population-failsafe-management-fhir
+	/// </summary>
+	Task<string?> GetDataAsync() => GetDataAsync(CancellationToken.None);
 }

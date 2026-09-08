@@ -10,5 +10,10 @@ public interface IChildProtectionInformationSharingMesh
 	/// Placeholder method for child-protection-information-sharing-mesh
 	/// </summary>
 	[Get("/placeholder")]
-	Task<string?> GetDataAsync(CancellationToken cancellationToken = default);
+	Task<string?> GetDataAsync(CancellationToken cancellationToken);
+
+	/// <summary>
+	/// Placeholder method for child-protection-information-sharing-mesh
+	/// </summary>
+	Task<string?> GetDataAsync() => GetDataAsync(CancellationToken.None);
 }

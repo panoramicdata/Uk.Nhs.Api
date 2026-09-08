@@ -10,5 +10,10 @@ public interface INationalDataOptOutFhir
 	/// Placeholder method for national-data-opt-out-fhir
 	/// </summary>
 	[Get("/placeholder")]
-	Task<string?> GetDataAsync(CancellationToken cancellationToken = default);
+	Task<string?> GetDataAsync(CancellationToken cancellationToken);
+
+	/// <summary>
+	/// Placeholder method for national-data-opt-out-fhir
+	/// </summary>
+	Task<string?> GetDataAsync() => GetDataAsync(CancellationToken.None);
 }

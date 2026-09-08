@@ -10,5 +10,10 @@ public interface ILogicalRecordArchitectureApiStandards
 	/// Placeholder method for logical-record-architecture-api-standards
 	/// </summary>
 	[Get("/placeholder")]
-	Task<string?> GetDataAsync(CancellationToken cancellationToken = default);
+	Task<string?> GetDataAsync(CancellationToken cancellationToken);
+
+	/// <summary>
+	/// Placeholder method for logical-record-architecture-api-standards
+	/// </summary>
+	Task<string?> GetDataAsync() => GetDataAsync(CancellationToken.None);
 }

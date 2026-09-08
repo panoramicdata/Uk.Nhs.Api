@@ -10,5 +10,10 @@ public interface IElectronicPrescribingAndMedicinesAdministrationStandards
 	/// Placeholder method for electronic-prescribing-and-medicines-administration-standards
 	/// </summary>
 	[Get("/placeholder")]
-	Task<string?> GetDataAsync(CancellationToken cancellationToken = default);
+	Task<string?> GetDataAsync(CancellationToken cancellationToken);
+
+	/// <summary>
+	/// Placeholder method for electronic-prescribing-and-medicines-administration-standards
+	/// </summary>
+	Task<string?> GetDataAsync() => GetDataAsync(CancellationToken.None);
 }

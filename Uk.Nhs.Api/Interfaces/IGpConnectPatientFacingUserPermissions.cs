@@ -10,5 +10,10 @@ public interface IGpConnectPatientFacingUserPermissions
 	/// Placeholder method for gp-connect-patient-facing-user-permissions
 	/// </summary>
 	[Get("/placeholder")]
-	Task<string?> GetDataAsync(CancellationToken cancellationToken = default);
+	Task<string?> GetDataAsync(CancellationToken cancellationToken);
+
+	/// <summary>
+	/// Placeholder method for gp-connect-patient-facing-user-permissions
+	/// </summary>
+	Task<string?> GetDataAsync() => GetDataAsync(CancellationToken.None);
 }

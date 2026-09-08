@@ -10,5 +10,10 @@ public interface ISpineDirectoryServiceFhir
 	/// Placeholder method for spine-directory-service-fhir
 	/// </summary>
 	[Get("/placeholder")]
-	Task<string?> GetDataAsync(CancellationToken cancellationToken = default);
+	Task<string?> GetDataAsync(CancellationToken cancellationToken);
+
+	/// <summary>
+	/// Placeholder method for spine-directory-service-fhir
+	/// </summary>
+	Task<string?> GetDataAsync() => GetDataAsync(CancellationToken.None);
 }

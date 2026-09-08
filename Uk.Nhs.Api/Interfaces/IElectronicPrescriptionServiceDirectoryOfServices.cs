@@ -10,5 +10,10 @@ public interface IElectronicPrescriptionServiceDirectoryOfServices
 	/// Placeholder method for electronic-prescription-service-directory-of-services
 	/// </summary>
 	[Get("/placeholder")]
-	Task<string?> GetDataAsync(CancellationToken cancellationToken = default);
+	Task<string?> GetDataAsync(CancellationToken cancellationToken);
+
+	/// <summary>
+	/// Placeholder method for electronic-prescription-service-directory-of-services
+	/// </summary>
+	Task<string?> GetDataAsync() => GetDataAsync(CancellationToken.None);
 }

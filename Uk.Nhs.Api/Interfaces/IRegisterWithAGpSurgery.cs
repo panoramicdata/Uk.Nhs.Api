@@ -10,5 +10,10 @@ public interface IRegisterWithAGpSurgery
 	/// Placeholder method for register-with-a-gp-surgery
 	/// </summary>
 	[Get("/placeholder")]
-	Task<string?> GetDataAsync(CancellationToken cancellationToken = default);
+	Task<string?> GetDataAsync(CancellationToken cancellationToken);
+
+	/// <summary>
+	/// Placeholder method for register-with-a-gp-surgery
+	/// </summary>
+	Task<string?> GetDataAsync() => GetDataAsync(CancellationToken.None);
 }

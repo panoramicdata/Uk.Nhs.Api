@@ -10,5 +10,10 @@ public interface IUrgentAndEmergencyCareContinuousQualityImprovementApi
 	/// Placeholder method for urgent-and-emergency-care-continuous-quality-improvement-api
 	/// </summary>
 	[Get("/placeholder")]
-	Task<string?> GetDataAsync(CancellationToken cancellationToken = default);
+	Task<string?> GetDataAsync(CancellationToken cancellationToken);
+
+	/// <summary>
+	/// Placeholder method for urgent-and-emergency-care-continuous-quality-improvement-api
+	/// </summary>
+	Task<string?> GetDataAsync() => GetDataAsync(CancellationToken.None);
 }

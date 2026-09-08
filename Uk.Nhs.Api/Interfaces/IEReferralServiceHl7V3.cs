@@ -10,5 +10,10 @@ public interface IEReferralServiceHl7V3
 	/// Placeholder method for e-referral-service-hl7-v3
 	/// </summary>
 	[Get("/placeholder")]
-	Task<string?> GetDataAsync(CancellationToken cancellationToken = default);
+	Task<string?> GetDataAsync(CancellationToken cancellationToken);
+
+	/// <summary>
+	/// Placeholder method for e-referral-service-hl7-v3
+	/// </summary>
+	Task<string?> GetDataAsync() => GetDataAsync(CancellationToken.None);
 }

@@ -10,5 +10,10 @@ public interface IPathologyMessagingEdifact
 	/// Placeholder method for pathology-messaging-edifact
 	/// </summary>
 	[Get("/placeholder")]
-	Task<string?> GetDataAsync(CancellationToken cancellationToken = default);
+	Task<string?> GetDataAsync(CancellationToken cancellationToken);
+
+	/// <summary>
+	/// Placeholder method for pathology-messaging-edifact
+	/// </summary>
+	Task<string?> GetDataAsync() => GetDataAsync(CancellationToken.None);
 }
