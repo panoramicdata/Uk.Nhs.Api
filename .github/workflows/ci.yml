@@ -27,8 +27,10 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release --no-restore
 
-    - name: Test
-      run: dotnet test --configuration Release --no-build --verbosity normal
+    # CyberAlertTests exercises the live digital.nhs.uk API, which Cloudflare blocks for
+    # GitHub Actions runners (403 challenge page) and which would also cost Actions minutes
+    # on every push. Sibling API-wrapper repos (Auvik.Api, HubSpot.Api, Cisco.Api,
+    # Datadog.Api, Jira.Api) likewise don't run tests here; run this suite locally instead.
 
     - name: Pack
       run: dotnet pack --configuration Release --no-build --output ./artifacts
