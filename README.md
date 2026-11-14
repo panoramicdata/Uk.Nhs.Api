@@ -5,6 +5,9 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/grade/Uk.Nhs.CyberAlerts.Api)](https://app.codacy.com/gh/panoramicdata/Uk.Nhs.CyberAlerts.Api/dashboard)
 
 # Uk.Nhs.CyberAlerts.Api
+
+> **Need help with APIs or .NET?** Panoramic Data are experts in APIs and .NET, and we can help with your development. [Contact us](https://www.panoramicdata.com/contact-us) or see our [software services](https://www.panoramicdata.com/services/software).
+
 A Nuget package for the UK NHS Cyber Alerts.
 
 Supports .NET 11.0.
