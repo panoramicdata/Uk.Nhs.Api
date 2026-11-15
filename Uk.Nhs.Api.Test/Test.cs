@@ -1,5 +1,6 @@
 ﻿namespace Uk.Nhs.Api.Test;
 
+[Trait("Category", "Integration")]
 public abstract class Test : IDisposable
 {
 	private bool disposedValue;

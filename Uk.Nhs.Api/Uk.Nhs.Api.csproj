@@ -43,6 +43,9 @@
     <None Include="..\README.md" Pack="true" PackagePath="" />
   </ItemGroup>
   <ItemGroup>
+    <InternalsVisibleTo Include="Uk.Nhs.Api.Test" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="*.cs" />
     <Compile Include="Interfaces\*.cs" />
     <Compile Include="CyberAlerts\*.cs" />
