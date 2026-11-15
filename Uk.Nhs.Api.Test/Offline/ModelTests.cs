@@ -26,12 +26,12 @@ public class ModelTests
 	{
 		var threatAffect = new ThreatAffect { PlatformText = "Windows", VersionsAffected = ["10", "11"], Leaf = true };
 		var step = new RemediationStep { Step = "Patch", Link = "https://example.test", Type = "link" };
-		var indicator = new IndicatorsCompromise { Heading = "IoC", Content = "1.2.3.4", Audience = "all" };
+		var indicator = new IndicatorsCompromise { Heading = "IoC", Content = "ioc-value", Audience = "all" };
 		var cve = new CveIdentifier { Id = "CVE-1", CveStatus = "Published", CveText = "text" };
 
 		threatAffect.VersionsAffected.Should().Equal("10", "11");
 		JsonSerializer.Serialize(step, Web).Should().Contain("\"step\":\"Patch\"");
-		indicator.Content.Should().Be("1.2.3.4");
+		indicator.Content.Should().Be("ioc-value");
 		cve.Id.Should().Be("CVE-1");
 	}
 
