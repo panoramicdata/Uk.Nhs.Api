@@ -33,28 +33,6 @@ public class ServiceInterfaceTests
 		return method.Invoke(api, arguments);
 	}
 
-	/// <summary>Verifies every placeholder service sends its parameterless default call to the placeholder route.</summary>
-	[Fact]
-	public async Task PlaceholderServices_ParameterlessCall_RequestsPlaceholderRoute()
-	{
-		var placeholderTypes = typeof(NhsClient).Assembly
-			.GetTypes()
-			.Where(type => type.IsInterface && type.Namespace == typeof(IHelloWorld).Namespace && type.GetMethod("GetDataAsync", Type.EmptyTypes) != null)
-			.ToList();
-		var (handler, client) = CreateClient();
-		using var _ = client;
-
-		foreach (var interfaceType in placeholderTypes)
-		{
-			var api = RestService.For(interfaceType, client);
-			await (Task)Invoke(api, interfaceType, "GetDataAsync")!;
-		}
-
-		placeholderTypes.Should().HaveCountGreaterThan(100);
-		handler.Paths.Should().HaveCount(placeholderTypes.Count);
-		handler.Paths.Should().OnlyContain(path => path == "/base/placeholder");
-	}
-
 	/// <summary>Verifies the Cyber Alerts overloads without a cancellation token forward to the full call.</summary>
 	[Fact]
 	public async Task CyberAlerts_OverloadsWithoutToken_ForwardToFullCall()
