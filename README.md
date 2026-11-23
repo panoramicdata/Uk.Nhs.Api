@@ -1,4 +1,4 @@
-[![Codacy Badge](https://app.codacy.com/project/badge/grade/Uk.Nhs.Api)](https://app.codacy.com/gh/panoramicdata/Uk.Nhs.Api/dashboard)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/d22981b9593b43839e91078bd3d06a10)](https://app.codacy.com/gh/panoramicdata/Uk.Nhs.Api/dashboard)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
