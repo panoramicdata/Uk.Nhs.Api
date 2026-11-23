@@ -6,7 +6,6 @@
     <Company>Panoramic Data</Company>
     <Authors>Panoramic Data Limited</Authors>
     <Description>A .NET client for the NHS England Cyber Alerts API, built on Refit.</Description>
-    <Copyright>Panoramic Data Limited 2025</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/panoramicdata/Uk.Nhs.Api</PackageProjectUrl>
     <PackageIcon>Icon.png</PackageIcon>
