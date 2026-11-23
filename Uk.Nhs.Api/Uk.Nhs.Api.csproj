@@ -5,7 +5,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Company>Panoramic Data</Company>
     <Authors>Panoramic Data Limited</Authors>
-    <Description>A nuget package for the UK NHS APIs.</Description>
+    <Description>A .NET client for the NHS England Cyber Alerts API, built on Refit.</Description>
     <Copyright>Panoramic Data Limited 2025</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/panoramicdata/Uk.Nhs.Api</PackageProjectUrl>
@@ -13,8 +13,8 @@
     <RepositoryUrl>https://github.com/panoramicdata/Uk.Nhs.Api</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageId>Uk.Nhs.Api</PackageId>
-    <PackageTags>UK NHS APIs</PackageTags>
-    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+    <PackageTags>UK NHS Cyber Alerts API</PackageTags>
+    <PackageReleaseNotes>Removes the placeholder service interfaces. Only the Cyber Alerts API remains. See the Breaking changes section of the README.</PackageReleaseNotes>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <Nullable>enable</Nullable>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>

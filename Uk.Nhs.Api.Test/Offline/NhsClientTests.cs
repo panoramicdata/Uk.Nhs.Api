@@ -5,7 +5,7 @@ namespace Uk.Nhs.Api.Test.Offline;
 /// <summary>Offline tests for client construction and disposal; nothing here sends a request.</summary>
 public class NhsClientTests
 {
-	/// <summary>Verifies every service property on the client is populated.</summary>
+	/// <summary>Verifies the service properties on the client are populated.</summary>
 	[Fact]
 	public void Constructor_PopulatesEveryServiceProperty()
 	{
@@ -16,7 +16,7 @@ public class NhsClientTests
 			.Where(property => property.PropertyType.IsInterface)
 			.ToList();
 
-		serviceProperties.Should().HaveCountGreaterThan(1);
+		serviceProperties.Should().ContainSingle(property => property.PropertyType == typeof(Uk.Nhs.Api.Interfaces.ICyberAlerts));
 		serviceProperties.Should().OnlyContain(property => property.GetValue(client) != null);
 	}
 
